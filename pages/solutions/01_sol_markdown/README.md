@@ -77,9 +77,7 @@ $$
 
 In the special case where x = 1 or -1, we have:
 
-$$
-e=\sum _{k=0}^{\infty }{\frac {1}{k!}}
-$$
+$$e=\sum _{k=0}^{\infty }{\frac {1}{k!}}$$
 
 and
 
