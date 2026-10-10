@@ -14,7 +14,7 @@ Czy możesz przepisać treść zawartą na kartce?
 
 ### 11. Co to są kropki kwantowe i jakie mają własności?
 
-- **0D struktura.**
+- **OD struktura.**
 - Ruch elektronów ograniczony w trzech wymiarach.
 - Najprostszy model – *quantum box* – kropka kwantowa w kształcie sześcianu, na zewnątrz potencjał nieskończony.
 
