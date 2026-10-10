@@ -81,5 +81,5 @@ $$e=\sum _{k=0}^{\infty }{\frac {1}{k!}}$$
 
 and
 
-$$e^{-1}=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{k!}$$
+$$e^{-1}=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{k!}}$$
 .
