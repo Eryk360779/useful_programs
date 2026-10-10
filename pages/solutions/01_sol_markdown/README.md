@@ -82,6 +82,6 @@ $$e=\sum _{k=0}^{\infty }{\frac {1}{k!}}$$
 and
 
 $$
-e^{-1}=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{k!}}
+{\displaystyle e^{-1}=\sum _{k=0}^{\infty }{\frac {(-1)^{k}}{k!}}.}
 $$
-.
+
