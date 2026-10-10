@@ -4,8 +4,9 @@
 
 ## Prompt użyty do wygenerowania tekstu przez AI
 
-
-
+```
+Czy możesz przepisać treść zawartą na kartce?
+```
 
 ## 12. Porównać własności heterostruktur, drutów i kropek kwantowych.
 
@@ -22,14 +23,14 @@
 
 - **Równanie Schrödingera:**
 
-\[
+$$\
 -\frac{\hbar^2}{2m}\left(
 \frac{\partial^2}{\partial x^2}
 +\frac{\partial^2}{\partial y^2}
 +\frac{\partial^2}{\partial z^2}
 \right)\Psi(x,y,z)
 =E\Psi(x,y,z)
-\]
+\$$
 
 - **Energia:**
 
