@@ -4,7 +4,7 @@
 
 ## Prompt użyty do wygenerowania tekstu przez AI
 
-```
+
 ## 11. Co to są kropki kwantowe i jakie mają własności?
 
 - 0D struktura
@@ -38,7 +38,7 @@
   - Rozwiązanie – funkcje Bessela typu \(J_{l+1/2}\).
 
 ## 12. Porównać własności heterostruktur, drutów i kropek kwantowych.
-```
+
 
 ## Finalna wersja notatki
 
