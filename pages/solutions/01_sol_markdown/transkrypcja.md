@@ -10,7 +10,7 @@ Czy możesz przepisać treść zawartą na kartce?
 
 ## Finalna wersja notatki
 
-## 11. Co to są kropki kwantowe i jakie mają własności?
+## 11. CO TO SĄ KROPKI I JAKIE MAJĄ WŁASNOŚCI?
 
 ### 11. Co to są kropki kwantowe i jakie mają własności?
 
@@ -40,7 +40,7 @@ E=\frac{\hbar^2\pi^2}{2m}\left(
 $$
 
 - Stany energetyczne są zdegenerowane.
-- **Sferyczna kropka kwantowa** → rozłożenie funkcji falowej \(\Psi\) na część radialną i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej).
+- **Sferyczna kropka kwantowa** → rozłożenie funkcji falowej $\(\Psi\)$ na część radialną i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej).
 - Rozwiązanie – funkcje Bessela typu $\(J_{l+1/2}\)$.
 
-### 12. Porównać własności heterostruktur, drutów i kropek kwantowych.
+### 12. PORÓWNAĆ WŁASNOŚCI HETEROSTRUKTUR, DRUTÓW I KROPEK KWANTOWYCH.
