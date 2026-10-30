@@ -12,7 +12,7 @@ Czy możesz przepisać treść zawartą na kartce?
 
 ## 11. CO TO SĄ KROPKI I JAKIE MAJĄ WŁASNOŚCI?
 
-### 11. Co to są kropki kwantowe i jakie mają własności?
+
 
 - **OD struktura.**
 - Ruch elektronów ograniczony w trzech wymiarach.
