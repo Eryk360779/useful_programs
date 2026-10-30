@@ -35,7 +35,7 @@ zasięgu, prędkości i energii ciała wyrzuconego z poziomu gruntu pod
 kątem $\alpha$. Rozpatrujemy dwa przypadki:
 
 -   **model idealny** --- brak oporu powietrza, stałe przyspieszenie
-grawitacyjne;
+    grawitacyjne;
 -   **model z oporem** --- siła oporu aerodynamicznego zależy od
     kwadratu szybkości i jest skierowana przeciwnie do wektora
     prędkości.
@@ -726,14 +726,16 @@ Uruchom z katalogu zawierającego ten plik:
     python rzut_ukosny.py
 Wyniki trafiają do files/rzut_ukosny/.
 
-### 7.5. Pełny skrypt
+### 7.5. Pełny skrypt — sekcje
 
 ```python
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import solve_ivp
+```
 
+```python
 # Parametry zadania
 V0 = 36.0                 # m/s
 ALPHA_DEG = 79.0          # stopnie
@@ -759,7 +761,9 @@ BLUE, ORANGE, GREEN = "#2463A6", "#D47722", "#168578"
 alpha = np.deg2rad(ALPHA_DEG)
 vx0 = V0 * np.cos(alpha)
 vy0 = V0 * np.sin(alpha)
+```
 
+```python
 # Rozwiązanie analityczne bez oporu
 t_flight_ideal = 2 * vy0 / G
 t_apex_ideal = vy0 / G
@@ -772,7 +776,9 @@ vx_i = np.full_like(t_i, vx0)
 vy_i = vy0 - G * t_i
 speed_i = np.hypot(vx_i, vy_i)
 energy_i = 0.5 * M * speed_i**2 + M * G * y_i
+```
 
+```python
 # Równania ruchu z oporem kwadratowym:
 # F_op = -1/2 rho Cd A |v| v
 def equations(t, state):
@@ -792,6 +798,7 @@ solution = solve_ivp(
     equations, (0, 30), [0, 0, vx0, vy0],
     events=hit_ground, rtol=1e-9, atol=1e-11, max_step=0.01
 )
+
 t_d = solution.t
 x_d, y_d, vx_d, vy_d = solution.y
 valid = y_d >= -1e-8
@@ -800,12 +807,16 @@ speed_d = np.hypot(vx_d, vy_d)
 ax_d = -(K_DRAG / M) * speed_d * vx_d
 ay_d = -G - (K_DRAG / M) * speed_d * vy_d
 energy_d = 0.5 * M * speed_d**2 + M * G * y_d
+```
 
+```python
 def save(name):
     plt.tight_layout()
     plt.savefig(OUT / name, bbox_inches="tight")
     plt.close()
+```
 
+```python
 # 1. Trajektoria
 plt.figure()
 plt.plot(x_i, y_i, label="Bez oporu powietrza", lw=2.4, color=BLUE)
@@ -863,7 +874,9 @@ plt.plot(t_d, np.hypot(ax_d, ay_d), color=GREEN, label="|a| — z oporem")
 plt.plot(t_i, np.full_like(t_i, G), color=BLUE, ls="--", label="g — bez oporu")
 plt.xlabel("Czas t [s]"); plt.ylabel("Wartość przyspieszenia [m/s²]")
 plt.title("Wartość przyspieszenia"); plt.legend(); save("07_wartosc_przyspieszenia.png")
+```
 
+```python
 print("Wykresy zapisano w:", OUT.resolve())
 print(f"Bez oporu: czas lotu={t_flight_ideal:.3f} s, zasięg={range_ideal:.3f} m, wysokość={height_ideal:.3f} m")
 print(f"Z oporem: czas lotu={t_d[-1]:.3f} s, zasięg={x_d[-1]:.3f} m, wysokość={np.max(y_d):.3f} m")
