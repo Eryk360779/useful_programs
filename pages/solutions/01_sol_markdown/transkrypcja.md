@@ -36,7 +36,7 @@ E=\frac{\hbar^2\pi^2}{2m}\left(
 \frac{n_x^2}{L_x^2}
 +\frac{n_y^2}{L_y^2}
 +\frac{n_z^2}{L_z^2}
-\right)\
+\right)
 $$
 
 - Stany energetyczne są zdegenerowane.
