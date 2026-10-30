@@ -69,6 +69,7 @@ print(y)
 $e^{x}=\lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}$.
 In the special case that x = 1, the result is the famous statement 
 $e=\lim _{n\to \infty }\left(1+{\frac {1}{n}}\right)^{n}$.
+
 $e^x = \sum_{k=0}^{\infty} \frac{x^k}{k!}$
 
 - The number e can be expressed as the sum of the following infinite series:
