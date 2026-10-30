@@ -4,7 +4,7 @@
 interpretacja wykresów.*
 
 **Temat:** ruch ciała wyrzuconego pod kątem do poziomu.  
-**Parametry początkowe:** \(v_0 = 36{,}0\,\mathrm{m/s}\), \(\alpha = 79{,}0^\circ\).  
+**Parametry początkowe:** $v_0 = 36{,}0\,\mathrm{m/s}$, $\alpha = 79{,}0^\circ$.  
 **Metoda:** rozwiązanie analityczne dla próżni oraz numeryczne całkowanie równań ruchu z oporem kwadratowym.  
 **Charakter danych:** wyniki modelowe, nie pomiary doświadczalne.
 
@@ -32,7 +32,7 @@ sprzężone przez wartość całkowitej prędkości.
 
 Celem raportu jest opisanie toru, czasu lotu, maksymalnej wysokości,
 zasięgu, prędkości i energii ciała wyrzuconego z poziomu gruntu pod
-kątem \(\alpha\). Rozpatrujemy dwa przypadki:
+kątem $\alpha$. Rozpatrujemy dwa przypadki:
 
 -   **model idealny** --- brak oporu powietrza, stałe przyspieszenie
     grawitacyjne;
@@ -44,15 +44,15 @@ kątem \(\alpha\). Rozpatrujemy dwa przypadki:
 
 | Wielkość | Symbol | Wartość |
 | --- | --- | --- |
-| Prędkość początkowa | \(v_0\) | \(36{,}0\,\mathrm{m/s}\) |
-| Kąt wyrzutu | \(\alpha\) | \(79{,}0^\circ\) |
-| Przyspieszenie ziemskie | \(g\) | \(9{,}81\,\mathrm{m/s^2}\) |
-| Masa ciała w modelu oporu | \(m\) | \(0{,}145\,\mathrm{kg}\) |
-| Gęstość powietrza | \(\rho\) | \(1{,}225\,\mathrm{kg/m^3}\) |
-| Współczynnik oporu | \(C_D\) | \(0{,}47\) |
-| Średnica ciała | \(d\) | \(0{,}073\,\mathrm{m}\) |
+| Prędkość początkowa | $v_0$ | $36{,}0\,\mathrm{m/s}$ |
+| Kąt wyrzutu | $\alpha$ | $79{,}0^\circ$ |
+| Przyspieszenie ziemskie | $g$ | $9{,}81\,\mathrm{m/s^2}$ |
+| Masa ciała w modelu oporu | $m$ | $0{,}145\,\mathrm{kg}$ |
+| Gęstość powietrza | $\rho$ | $1{,}225\,\mathrm{kg/m^3}$ |
+| Współczynnik oporu | $C_D$ | $0{,}47$ |
+| Średnica ciała | $d$ | $0{,}073\,\mathrm{m}$ |
 
-Wartości \(m,\rho,C_D,d\) są dodatkowymi założeniami modelu
+Wartości $m,\rho,C_D,d$ są dodatkowymi założeniami modelu
 potrzebnymi do obliczenia oporu. Nie wynikają z podanych parametrów
 indeksu. Przyjęto przykładowe parametry niewielkiej kulistej piłki;
 rzeczywisty współczynnik oporu zależy m.in. od kształtu, powierzchni i
@@ -60,47 +60,47 @@ liczby Reynoldsa.
 
 ### 1.2. Układ współrzędnych i warunki początkowe
 
-Początek układu współrzędnych znajduje się w punkcie wyrzutu. Oś \(x\)
-jest pozioma i skierowana w prawo, a oś \(y\) pionowa i skierowana w górę.
-Poziom gruntu ma równanie \(y=0\).
+Początek układu współrzędnych znajduje się w punkcie wyrzutu. Oś $x$
+jest pozioma i skierowana w prawo, a oś $y$ pionowa i skierowana w górę.
+Poziom gruntu ma równanie $y=0$.
 
-W chwili \(t=0\):
+W chwili $t=0$:
 
-\[
+$$
  x(0)=0,\qquad y(0)=0.
-\]
+$$
 
 Składowe prędkości początkowej wynoszą:
 
-\[
+$$
  v_{x0}=v_0\cos\alpha,\qquad v_{y0}=v_0\sin\alpha.
-\]
+$$
 
 Po podstawieniu danych:
 
-\[
+$$
  v_{x0}=36\cos79^\circ\approx 6{,}87\,\mathrm{m/s},
-\]
+$$
 
-\[
+$$
  v_{y0}=36\sin79^\circ\approx 35{,}34\,\mathrm{m/s}.
-\]
+$$
 
 ### 1.3. Symbole i jednostki SI
 
 | Symbol | Znaczenie | Jednostka |
 | --- | --- | --- |
-| \((x,y)\) | współrzędne położenia | \(\mathrm{m}\) |
-| \(t\) | czas | \(\mathrm{s}\) |
-| \((v_x,v_y,v)\) | składowe i wartość prędkości | \(\mathrm{m/s}\) |
-| \((a_x,a_y)\) | składowe przyspieszenia | \(\mathrm{m/s^2}\) |
-| \(m\) | masa | \(\mathrm{kg}\) |
-| \(g\) | przyspieszenie ziemskie | \(\mathrm{m/s^2}\) |
-| \(\rho\) | gęstość powietrza | \(\mathrm{kg/m^3}\) |
-| \(C_D\) | współczynnik oporu | \(1\) |
-| \(A\) | pole przekroju poprzecznego | \(\mathrm{m^2}\) |
-| \(F_D\) | wartość siły oporu | \(\mathrm{N}\) |
-| \(E\) | energia mechaniczna | \(\mathrm{J}\) |
+| $(x,y)$ | współrzędne położenia | $\mathrm{m}$ |
+| $t$ | czas | $\mathrm{s}$ |
+| $(v_x,v_y,v)$ | składowe i wartość prędkości | $\mathrm{m/s}$ |
+| $(a_x,a_y)$ | składowe przyspieszenia | $\mathrm{m/s^2}$ |
+| $m$ | masa | $\mathrm{kg}$ |
+| $g$ | przyspieszenie ziemskie | $\mathrm{m/s^2}$ |
+| $\rho$ | gęstość powietrza | $\mathrm{kg/m^3}$ |
+| $C_D$ | współczynnik oporu | $1$ |
+| $A$ | pole przekroju poprzecznego | $\mathrm{m^2}$ |
+| $F_D$ | wartość siły oporu | $\mathrm{N}$ |
+| $E$ | energia mechaniczna | $\mathrm{J}$ |
 
 ------------------------------------------------------------------------
 
@@ -110,99 +110,99 @@ Po podstawieniu danych:
 
 W modelu idealnym na ciało działa wyłącznie siła ciężkości:
 
-\[
+$$
 \vec{F}_g = m\vec{g}.
-\]
+$$
 
 Z drugiej zasady dynamiki Newtona:
 
-\[
+$$
  m\vec{a}=m\vec{g}.
-\]
+$$
 
 Dla osi poziomej i pionowej otrzymujemy:
 
-\[
+$$
  m a_x=0,\qquad m a_y=-mg.
-\]
+$$
 
 Po podzieleniu przez masę:
 
-\[
+$$
 \boxed{a_x=0,\qquad a_y=-g.}
-\]
+$$
 
 Ponieważ przyspieszenie jest pochodną prędkości po czasie:
 
-\[
+$$
 \frac{dv_x}{dt}=0,\qquad \frac{dv_y}{dt}=-g.
-\]
+$$
 
 Całkując i uwzględniając prędkość początkową:
 
-\[
+$$
 \boxed{v_x(t)=v_0\cos\alpha,}
-\]
+$$
 
-\[
+$$
 \boxed{v_y(t)=v_0\sin\alpha-gt.}
-\]
+$$
 
 ### 2.2. Równania położenia
 
 Prędkość jest pochodną położenia:
 
-\[
+$$
 \frac{dx}{dt}=v_0\cos\alpha,
-\]
+$$
 
-\[
+$$
 \frac{dy}{dt}=v_0\sin\alpha-gt.
-\]
+$$
 
 Całkujemy pierwsze równanie:
 
-\[
+$$
  x(t)=v_0\cos\alpha\cdot t+C_x.
-\]
+$$
 
-Z warunku \(x(0)=0\) wynika \(C_x=0\), zatem:
+Z warunku $x(0)=0$ wynika $C_x=0$, zatem:
 
-\[
+$$
 \boxed{x(t)=v_0\cos\alpha\cdot t.}
-\]
+$$
 
 Analogicznie dla osi pionowej:
 
-\[
+$$
  y(t)=v_0\sin\alpha\cdot t-\frac{1}{2}gt^2 + C_y.
-\]
+$$
 
-Z warunku \(y(0)=0\) otrzymujemy \(C_y=0\):
+Z warunku $y(0)=0$ otrzymujemy $C_y=0$:
 
-\[
+$$
 \boxed{y(t)=v_0\sin\alpha\cdot t-\frac{1}{2}gt^2.}
-\]
+$$
 
 ### 2.3. Równanie toru
 
 Aby otrzymać równanie toru, eliminujemy czas. Z równania poziomego:
 
-\[
+$$
  t=\frac{x}{v_0\cos\alpha}.
-\]
+$$
 
 Podstawiamy do równania pionowego:
 
-\[
+$$
  y=x\tan\alpha - \frac{g x^2}{2v_0^2\cos^2\alpha}.
-\]
+$$
 
 Jest to równanie paraboli:
 
-\[
+$$
 \boxed{y(x)=x\tan\alpha-\frac{g}{2v_0^2\cos^2\alpha}x^2.}
-\]
+$$
 
 W modelu bez oporu tor ruchu jest symetryczną parabolą, jeżeli punkt
 lądowania znajduje się na tej samej wysokości co punkt wyrzutu.
@@ -211,64 +211,64 @@ lądowania znajduje się na tej samej wysokości co punkt wyrzutu.
 
 W najwyższym punkcie toru pionowa składowa prędkości jest równa zeru:
 
-\[
+$$
  v_y(t_{\max})=0.
-\]
+$$
 
 Stąd:
 
-\[
+$$
  v_0\sin\alpha - gt_{\max}=0,
-\]
+$$
 
-\[
+$$
 \boxed{t_{\max}=\frac{v_0\sin\alpha}{g}.}
-\]
+$$
 
-Maksymalną wysokość otrzymujemy przez podstawienie tego czasu do \(y(t)\):
+Maksymalną wysokość otrzymujemy przez podstawienie tego czasu do $y(t)$:
 
-\[
+$$
  H_{\max}=v_0\sin\alpha\frac{v_0\sin\alpha}{g} - \frac{g}{2}\left(\frac{v_0\sin\alpha}{g}\right)^2.
-\]
+$$
 
 Po uproszczeniu:
 
-\[
+$$
 \boxed{H_{\max}=\frac{v_0^2\sin^2\alpha}{2g}.}
-\]
+$$
 
 ### 2.5. Czas lotu i zasięg
 
-Ciało wraca na poziom gruntu, gdy \(y(t)=0\):
+Ciało wraca na poziom gruntu, gdy $y(t)=0$:
 
-\[
+$$
  v_0\sin\alpha\cdot t - \frac{1}{2}gt^2 =0.
-\]
+$$
 
-Wyłączamy \(t\):
+Wyłączamy $t$:
 
-\[
+$$
  t\left(v_0\sin\alpha - \frac{1}{2}gt\right)=0.
-\]
+$$
 
-Rozwiązanie \(t=0\) oznacza chwilę wyrzutu. Drugie rozwiązanie to czas
+Rozwiązanie $t=0$ oznacza chwilę wyrzutu. Drugie rozwiązanie to czas
 lotu:
 
-\[
+$$
 \boxed{T=\frac{2v_0\sin\alpha}{g}.}
-\]
+$$
 
-Zasięg poziomy jest równy \(x(T)\):
+Zasięg poziomy jest równy $x(T)$:
 
-\[
+$$
  R=v_0\cos\alpha\cdot T,
-\]
+$$
 
 czyli:
 
-\[
+$$
 \boxed{R=\frac{v_0^2\sin(2\alpha)}{g}.}
-\]
+$$
 
 Wzór ten obowiązuje dla startu i lądowania na tej samej wysokości oraz
 przy braku oporu powietrza.
@@ -279,52 +279,52 @@ przy braku oporu powietrza.
 
 Dane:
 
-\[
+$$
  v_0=36\,\mathrm{m/s},\qquad \alpha=79^\circ,\qquad g=9{,}81\,\mathrm{m/s^2}. 
-\]
+$$
 
 ### 3.1. Wyniki obliczeń
 
 | Wielkość | Wzór | Wynik |
 | --- | --- | --- |
-| Pozioma składowa prędkości początkowej | \(v_0\cos\alpha\) | ok. \(6{,}87\,\mathrm{m/s}\) |
-| Pionowa składowa prędkości początkowej | \(v_0\sin\alpha\) | ok. \(35{,}34\,\mathrm{m/s}\) |
-| Czas wznoszenia | \(v_0\sin\alpha/g\) | ok. \(3{,}60\,\mathrm{s}\) |
-| Czas całego lotu | \(2v_0\sin\alpha/g\) | ok. \(7{,}20\,\mathrm{s}\) |
-| Maksymalna wysokość | \(v_0^2\sin^2\alpha/(2g)\) | ok. \(63{,}6\,\mathrm{m}\) |
-| Zasięg | \(v_0^2\sin(2\alpha)/g\) | ok. \(49{,}5\,\mathrm{m}\) |
+| Pozioma składowa prędkości początkowej | $v_0\cos\alpha$ | ok. $6{,}87\,\mathrm{m/s}$ |
+| Pionowa składowa prędkości początkowej | $v_0\sin\alpha$ | ok. $35{,}34\,\mathrm{m/s}$ |
+| Czas wznoszenia | $v_0\sin\alpha/g$ | ok. $3{,}60\,\mathrm{s}$ |
+| Czas całego lotu | $2v_0\sin\alpha/g$ | ok. $7{,}20\,\mathrm{s}$ |
+| Maksymalna wysokość | $v_0^2\sin^2\alpha/(2g)$ | ok. $63{,}6\,\mathrm{m}$ |
+| Zasięg | $v_0^2\sin(2\alpha)/g$ | ok. $49{,}5\,\mathrm{m}$ |
 
 ### 3.2. Przebiegi czasowe
 
 Dla przyjętych danych równania ruchu mają postać:
 
-\[
+$$
  x(t)=36\cos79^\circ\cdot t,
-\]
+$$
 
-\[
+$$
  y(t)=36\sin79^\circ\cdot t-4{,}905t^2.
-\]
+$$
 
 Składowe prędkości:
 
-\[
+$$
  v_x(t)=36\cos79^\circ,
-\]
+$$
 
-\[
+$$
  v_y(t)=36\sin79^\circ-9{,}81t.
-\]
+$$
 
 Składowe przyspieszenia są stałe:
 
-\[
+$$
  a_x(t)=0,\qquad a_y(t)=-9{,}81\,\mathrm{m/s^2}.
-\]
+$$
 
 Wykres toru pokazuje parabolę. Wykresy położenia i prędkości pozwalają
-odczytać moment osiągnięcia najwyższego punktu. W tej chwili \(v_y=0\),
-ale \(v_x\) nadal ma niezerową wartość.
+odczytać moment osiągnięcia najwyższego punktu. W tej chwili $v_y=0$,
+ale $v_x$ nadal ma niezerową wartość.
 
 ![Tor ruchu w modelu bez oporu i z oporem powietrza](files/rzut_ukosny/01_tor_ruchu.png)
 
@@ -348,90 +348,90 @@ W rzeczywistym ruchu powietrze oddziałuje na poruszające się ciało. Dla
 odpowiednio dużych szybkości często stosuje się model oporu
 kwadratowego:
 
-\[
+$$
 \boxed{\vec F_D=-\frac12\rho C_D A|\vec v|\vec v.}
-\]
+$$
 
 Znak minus oznacza, że siła oporu ma zwrot przeciwny do prędkości.
 Wartość siły wynosi:
 
-\[
+$$
  F_D=\frac12\rho C_D A v^2.
-\]
+$$
 
 Pole przekroju kulistego ciała:
 
-\[
+$$
  A=\pi r^2 = \pi\left(\frac{d}{2}\right)^2.
-\]
+$$
 
-Dla średnicy \(d=0{,}073\,\mathrm{m}\):
+Dla średnicy $d=0{,}073\,\mathrm{m}$:
 
-\[
+$$
  A=\pi(0{,}0365)^2\approx 0{,}00419\,\mathrm{m^2}.
-\]
+$$
 
 ### 4.2. Rozłożenie siły oporu na osie
 
 Wektor prędkości ma składowe:
 
-\[
+$$
 \vec v=(v_x,v_y),
-\]
+$$
 
 a jego wartość:
 
-\[
+$$
  v=\sqrt{v_x^2+v_y^2}.
-\]
+$$
 
 Składowe siły oporu:
 
-\[
+$$
  F_{Dx}=-\frac12\rho C_D A v v_x,
-\]
+$$
 
-\[
+$$
  F_{Dy}=-\frac12\rho C_D A v v_y.
-\]
+$$
 
 Z drugiej zasady Newtona:
 
-\[
+$$
  m a_x = F_{Dx},
-\]
+$$
 
-\[
+$$
  m a_y = -mg + F_{Dy}.
-\]
+$$
 
 Ostatecznie:
 
-\[
+$$
 \boxed{
 \frac{dv_x}{dt}=-\frac{\rho C_D A}{2m}\sqrt{v_x^2+v_y^2}\,v_x
 }
-\]
+$$
 
 oraz:
 
-\[
+$$
 \boxed{
 \frac{dv_y}{dt}=-g-\frac{\rho C_D A}{2m}\sqrt{v_x^2+v_y^2}\,v_y.
 }
-\]
+$$
 
 Równania położenia pozostają następujące:
 
-\[
+$$
 \frac{dx}{dt}=v_x,\qquad \frac{dy}{dt}=v_y.
-\]
+$$
 
 ### 4.3. Układ równań pierwszego rzędu
 
 Cały model można zapisać jako układ czterech równań:
 
-\[
+$$
 \boxed{
 \begin{aligned}
 \dot{x} &= v_x,\\
@@ -440,20 +440,20 @@ Cały model można zapisać jako układ czterech równań:
 \dot{v}_y &= -g-k\sqrt{v_x^2+v_y^2}\,v_y,
 \end{aligned}
 }
-\]
+$$
 
 gdzie:
 
-\[
+$$
  k=\frac{\rho C_D A}{2m}.
-\]
+$$
 
-Parametr \(k\) ma jednostkę \(\mathrm{m^{-1}}\). Dla przyjętych
+Parametr $k$ ma jednostkę $\mathrm{m^{-1}}$. Dla przyjętych
 parametrów:
 
-\[
+$$
  k=\frac{1{,}225\cdot 0{,}47\cdot 0{,}00419}{2\cdot 0{,}145}.
-\]
+$$
 
 Taki układ nie ma w ogólności prostego rozwiązania analitycznego. W
 raporcie rozwiązujemy go numerycznie metodą Rungego--Kutty za pomocą
@@ -463,19 +463,19 @@ funkcji `solve_ivp` z biblioteki SciPy.
 
 Warunki początkowe są takie same jak w modelu idealnym:
 
-\[
+$$
  x(0)=0,\quad y(0)=0,
-\]
+$$
 
-\[
+$$
  v_x(0)=v_0\cos\alpha,\quad v_y(0)=v_0\sin\alpha.
-\]
+$$
 
 Symulację kończymy w chwili ponownego przecięcia poziomu gruntu:
 
-\[
+$$
  y(t)=0,\qquad t>0.
-\]
+$$
 
 W kodzie warunek ten jest realizowany jako zdarzenie numeryczne, które
 zatrzymuje całkowanie przy opadającym ciele.
@@ -484,24 +484,24 @@ zatrzymuje całkowanie przy opadającym ciele.
 
 Energia mechaniczna jest sumą energii kinetycznej i potencjalnej:
 
-\[
+$$
  E_m = \frac{1}{2}mv^2 + mgy.
-\]
+$$
 
 W modelu bez oporu energia mechaniczna jest zachowana. W modelu z oporem
 jej pochodna wynosi:
 
-\[
+$$
 \frac{dE_m}{dt}=\vec F_D\cdot\vec v.
-\]
+$$
 
 Po podstawieniu siły oporu:
 
-\[
+$$
 \boxed{
 \frac{dE_m}{dt}=-\frac12\rho C_D A v^3\le 0.
 }
-\]
+$$
 
 Energia mechaniczna maleje, ponieważ część energii jest rozpraszana w
 otoczeniu. Nie oznacza to naruszenia zasady zachowania energii
@@ -523,7 +523,7 @@ analityczne.
 | Tor ruchu | parabola | krzywa niesymetryczna |
 | Składowa pozioma prędkości | stała | maleje co do wartości |
 | Przyspieszenie poziome | zero | niezerowe |
-| Przyspieszenie pionowe | stałe \(-g\) | zależne od prędkości |
+| Przyspieszenie pionowe | stałe $-g$ | zależne od prędkości |
 | Czas lotu | większy w tym przykładzie | krótszy lub dłuższy zależnie od parametrów |
 | Zasięg | większy w tym przykładzie | mniejszy |
 | Energia mechaniczna | stała | maleje |
@@ -560,12 +560,12 @@ tylko składowa pionowa prędkości, a nie cała prędkość.
 ![Składowe przyspieszenia w modelu z oporem](files/rzut_ukosny/05_przyspieszenie.png)
 
 *Rysunek 6. W modelu z oporem przyspieszenie poziome nie jest zerowe, a
-pionowe nie musi być równe \(-g\).*
+pionowe nie musi być równe $-g$.*
 
 W czasie wznoszenia opór działa w dół, zgodnie z kierunkiem przeciwnym
 do prędkości. W czasie opadania opór ma składową skierowaną ku górze,
 przeciwną do ruchu pionowego. Z tego powodu pionowe przyspieszenie może
-mieć inną wartość niż \(-g\).
+mieć inną wartość niż $-g$.
 
 ### 5.5. Energia mechaniczna
 
@@ -582,7 +582,7 @@ mechaniczną samego poruszającego się ciała.
 
 ![Wartość przyspieszenia w funkcji czasu](files/rzut_ukosny/07_wartosc_przyspieszenia.png)
 
-*Rysunek 8. Bez oporu wartość przyspieszenia jest równa \(g\). W modelu
+*Rysunek 8. Bez oporu wartość przyspieszenia jest równa $g$. W modelu
 oporu wartość ta zmienia się w trakcie lotu.*
 
 ------------------------------------------------------------------------
@@ -591,12 +591,12 @@ oporu wartość ta zmienia się w trakcie lotu.*
 
 1.  Przyjęto stałą gęstość powietrza. W rzeczywistości może ona zmieniać
     się z wysokością, temperaturą i ciśnieniem.
-2.  Współczynnik \(C_D\) przyjęto jako stały. W praktyce zależy on od
+2.  Współczynnik $C_D$ przyjęto jako stały. W praktyce zależy on od
     kształtu ciała, orientacji i warunków przepływu.
 3.  Pominięto wiatr, obrót ciała, siłę Magnusa oraz ewentualne zmiany
     orientacji.
 4.  Przyjęto stałe przyspieszenie grawitacyjne
-    \(g=9{,}81\,\mathrm{m/s^2}\).
+    $g=9{,}81\,\mathrm{m/s^2}$.
 5.  Ciało traktowane jest jako punkt materialny, a zderzenie z podłożem
     nie jest modelowane.
 6.  Parametry obiektu użyte w modelu oporu są przykładowe. Zmiana masy,
@@ -681,7 +681,7 @@ solution = solve_ivp(
 )
 ```
 
-W powyższym fragmencie `state` zawiera kolejno \((x, y, v_x, v_y)\). Funkcja
+W powyższym fragmencie `state` zawiera kolejno $(x, y, v_x, v_y)$. Funkcja
 `solve_ivp` numerycznie całkuje układ równań, a zdarzenie `hit_ground`
 kończy obliczenia po ponownym osiągnięciu poziomu gruntu.
 
@@ -694,7 +694,7 @@ kończy obliczenia po ponownym osiągnięciu poziomu gruntu.
 2.  Tor ruchu w modelu idealnym jest parabolą, a czas wznoszenia jest
     równy połowie całkowitego czasu lotu, jeśli start i lądowanie
     odbywają się na tej samej wysokości.
-3.  Dla \(v_0=36\,\mathrm{m/s}\) i \(\alpha=79^\circ\) duża część prędkości
+3.  Dla $v_0=36\,\mathrm{m/s}$ i $\alpha=79^\circ$ duża część prędkości
     początkowej jest skierowana pionowo. Dlatego lot trwa stosunkowo długo,
     a zasięg poziomy jest ograniczony.
 4.  Uwzględnienie oporu powietrza powoduje zmianę obu składowych
