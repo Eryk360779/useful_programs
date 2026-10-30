@@ -35,7 +35,7 @@ zasięgu, prędkości i energii ciała wyrzuconego z poziomu gruntu pod
 kątem $\alpha$. Rozpatrujemy dwa przypadki:
 
 -   **model idealny** --- brak oporu powietrza, stałe przyspieszenie
-    grawitacyjne;
+grawitacyjne;
 -   **model z oporem** --- siła oporu aerodynamicznego zależy od
     kwadratu szybkości i jest skierowana przeciwnie do wektora
     prędkości.
@@ -326,15 +326,15 @@ Wykres toru pokazuje parabolę. Wykresy położenia i prędkości pozwalają
 odczytać moment osiągnięcia najwyższego punktu. W tej chwili $v_y=0$,
 ale $v_x$ nadal ma niezerową wartość.
 
-![Tor ruchu w modelu bez oporu i z oporem powietrza](files/rzut_ukosny/01_tor_ruchu.png)
+![Tor ruchu w modelu bez oporu i z oporem powietrza](./01_tor_ruchu.png)
 
 *Rysunek 1. Porównanie torów ruchu w obu modelach.*
 
-![Położenie poziome i pionowe w funkcji czasu](files/rzut_ukosny/02_polozenie_czas.png)
+![Położenie poziome i pionowe w funkcji czasu](./02_polozenie_czas.png)
 
 *Rysunek 2. Zmiana współrzędnych położenia w czasie.*
 
-![Składowe prędkości w funkcji czasu](files/rzut_ukosny/03_predkosci.png)
+![Składowe prędkości w funkcji czasu](./03_predkosci.png)
 
 *Rysunek 3. Składowe prędkości poziomej i pionowej.*
 
@@ -534,7 +534,7 @@ dowolnego ciała.
 
 ### 5.2. Tor ruchu
 
-![Porównanie torów ruchu](files/rzut_ukosny/01_tor_ruchu.png)
+![Porównanie torów ruchu](./01_tor_ruchu.png)
 
 *Rysunek 4. Tor bez oporu jest parabolą. Opór zmniejsza składowe
 prędkości i zmienia kształt toru.*
@@ -546,18 +546,18 @@ siła oporu zmieniają się w czasie.
 
 ### 5.3. Prędkość i szybkość
 
-![Wykres szybkości w funkcji czasu](files/rzut_ukosny/04_szybkosc.png)
+![Wykres szybkości w funkcji czasu](./04_szybkosc.png)
 
 *Rysunek 5. Szybkość jest wartością wektora prędkości, a nie jego
 składową pionową.*
 
 Bez oporu pozioma składowa prędkości jest stała. Z oporem obie składowe
 zmieniają się. Warto pamiętać, że w najwyższym punkcie toru zerowa jest
-tylko składowa pionowa prędkości, a nie cała prędkość.
+tyko składowa pionowa prędkości, a nie cała prędkość.
 
 ### 5.4. Przyspieszenie
 
-![Składowe przyspieszenia w modelu z oporem](files/rzut_ukosny/05_przyspieszenie.png)
+![Składowe przyspieszenia w modelu z oporem](./05_przyspieszenie.png)
 
 *Rysunek 6. W modelu z oporem przyspieszenie poziome nie jest zerowe, a
 pionowe nie musi być równe $-g$.*
@@ -569,7 +569,7 @@ mieć inną wartość niż $-g$.
 
 ### 5.5. Energia mechaniczna
 
-![Energia mechaniczna w obu modelach](files/rzut_ukosny/06_energia.png)
+![Energia mechaniczna w obu modelach](./06_energia.png)
 
 *Rysunek 7. W modelu idealnym energia mechaniczna pozostaje stała,
 natomiast w modelu z oporem maleje.*
@@ -580,7 +580,7 @@ mechaniczną samego poruszającego się ciała.
 
 ### 5.6. Wartość przyspieszenia
 
-![Wartość przyspieszenia w funkcji czasu](files/rzut_ukosny/07_wartosc_przyspieszenia.png)
+![Wartość przyspieszenia w funkcji czasu](./07_wartosc_przyspieszenia.png)
 
 *Rysunek 8. Bez oporu wartość przyspieszenia jest równa $g$. W modelu
 oporu wartość ta zmienia się w trakcie lotu.*
@@ -863,3 +863,4 @@ plt.title("Wartość przyspieszenia"); plt.legend(); save("07_wartosc_przyspiesz
 print("Wykresy zapisano w:", OUT.resolve())
 print(f"Bez oporu: czas lotu={t_flight_ideal:.3f} s, zasięg={range_ideal:.3f} m, wysokość={height_ideal:.3f} m")
 print(f"Z oporem: czas lotu={t_d[-1]:.3f} s, zasięg={x_d[-1]:.3f} m, wysokość={np.max(y_d):.3f} m")
+
