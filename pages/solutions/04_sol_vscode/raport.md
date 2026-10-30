@@ -725,7 +725,10 @@ Uruchom z katalogu zawierającego ten plik:
     python -m pip install numpy scipy matplotlib
     python rzut_ukosny.py
 Wyniki trafiają do files/rzut_ukosny/.
-"""
+
+### 7.5. Pełny skrypt
+
+```python
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
@@ -781,6 +784,7 @@ def equations(t, state):
 
 def hit_ground(t, state):
     return state[1]
+
 hit_ground.terminal = True
 hit_ground.direction = -1
 
@@ -863,4 +867,4 @@ plt.title("Wartość przyspieszenia"); plt.legend(); save("07_wartosc_przyspiesz
 print("Wykresy zapisano w:", OUT.resolve())
 print(f"Bez oporu: czas lotu={t_flight_ideal:.3f} s, zasięg={range_ideal:.3f} m, wysokość={height_ideal:.3f} m")
 print(f"Z oporem: czas lotu={t_d[-1]:.3f} s, zasięg={x_d[-1]:.3f} m, wysokość={np.max(y_d):.3f} m")
-
+```
