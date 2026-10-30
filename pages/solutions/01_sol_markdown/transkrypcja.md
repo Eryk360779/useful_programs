@@ -40,7 +40,7 @@ E=\frac{\hbar^2\pi^2}{2m}\left(
 $$
 
 - Stany energetyczne są zdegenerowane.
-- **Sferyczna kropka kwantowa** → rozłożenie funkcji falowej $\(\Psi\)$ na część radialną i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej).
-- Rozwiązanie – funkcje Bessela typu $\(J_{l+1/2}\)$.
+- **Sferyczna kropka kwantowa** → rozłożenie funkcji falowej $\Psi$ na część radialną i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej).
+- Rozwiązanie – funkcje Bessela typu $J_{l+1/2}$.
 
 ### 12. PORÓWNAĆ WŁASNOŚCI HETEROSTRUKTUR, DRUTÓW I KROPEK KWANTOWYCH.
