@@ -1,4 +1,4 @@
-# Rzut ukośny --- model bez oporu i z oporem powietrza
+# Rzut ukośny - model bez oporu i z oporem powietrza
 
 *Raport obliczeniowy: wyprowadzenie równań, symulacja numeryczna i
 interpretacja wykresów.*
